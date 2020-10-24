@@ -2,9 +2,17 @@
 function greet(name = 'World') {
   return `Hello ${name}!`;
 }
-
 console.log(greet('Ironhack'));
 console.log(greet());
+
+function greetAll(students) {
+  for (let person of students) {
+    console.log(greet(person));
+  }
+}
+
+const students = ['Carlos', 'Julio'];
+greetAll(students)
 
 function isVocal(char) {
   switch (char.toLowerCase()) {
@@ -124,3 +132,12 @@ function removeElement(list = [], element) {
 const list = [10, 20, 30, 40];
 console.log('Elements result:', removeElement(list, 20));
 console.log('Elements result:', list); // Be careful, 'list' is just the array reference and the content can mutate!
+
+
+
+function start() {
+
+  startKey();
+  enterMarcha(1);
+  pushAcelerator();
+}
